@@ -2,21 +2,6 @@
 
 This is a personal portfolio website designed to showcase my skills, projects, experiences, and contact information. The website is built using **HTML**, **CSS**, and **JavaScript** to create a visually appealing and fully functional platform that reflects your personal style and professional achievements.
 
-## Project Objective
-
-The primary goal of this project is to:
-- Design and develop a portfolio website to highlight your expertise.
-- Showcase your skills, professional experiences, and past projects.
-- Provide an easy way for potential employers, clients, or collaborators to contact you.
-
-## Features
-
-- **Home Page**: An introduction to you and your portfolio.
-- **About Section**: Details about your skills, background, and expertise.
-- **Projects Section**: A gallery or list of projects with descriptions and links.
-- **Contact Form**: A functional form for users to reach out to you.
-- **Responsive Design**: Optimized for both desktop and mobile viewing.
-
 ---
 
 ## How to Run the Website
@@ -57,5 +42,3 @@ Running the website with a local server is recommended to see the more advanced 
 3. Right-click on `index.html` and select **Open with Live Server**.
 
 ---
-
-
