@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("images/ocean.png");
+    background-repeat: no-repeat;
+    background-color: #473f6e;
+    font-family: "Sour Gummy";
+}
+
+/* ---------------Home--------------- */
+
+.container{
+    padding: 5px;
+}
+
+.header-text{
+    padding: 160px 100px 0px;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.header-text p{
+    font-size: 30px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: darkorange;
+    text-decoration: none;
+    font-size: 45px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: darkgoldenrod;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* ---------------About--------------- */
+
+#about{
+    padding: 30px;
+    color: rgb(58, 91, 134);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 1000px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.about-col-2 p.about-text {
+    font-size: 25px;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: darkred;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.tab-contents ul li span{
+    color: darkred;
+    font-size: 15px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.btn{
+    font-family:"Sour Gummy";
+    display: inline-block;
+    background: rgb(58, 91, 134);
+    margin: 0px auto;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+/* ---------------Projects--------------- */
+
+#projects{
+    padding: 0 100px;
+}
+
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list div{
+    background: rgb(104, 103, 161);
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.projects-list div img{
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.projects-list div img.among-us{
+    width: 450px;
+}
+
+.projects-list div img.hike{
+    width: 250px;
+}
+
+.projects-list div h2{
+    font-size: 35px;
+    font-weight:500;
+    margin-bottom: 15px;
+}
+
+
+.projects-list div a{
+    text-decoration: none;
+    color: rgb(221, 220, 220);
+    font-size: 18px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.projects-list div:hover{
+    background: rgb(50, 37, 110);
+    transform: translateY(-10px);
+}
+
+/* ---------------Skills--------------- */
+
+#skills{
+    padding: 30px 100px;
+}
+
+.skills-left{
+    flex-basis: 35%;
+}
+
+.skills-right{
+    margin-top: 105px;
+    flex-basis: 65%;
+}
+
+.skills-right ul li{
+    margin: 45px 0;
+}
+
+.skills-left h3{
+    font-weight: 400px;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 20px;
+}
+
+.skills-right li{
+    font-size: 20px;;
+}
+
+.progress-bar{
+    background: #a3a3a3;
+    width: 400px;
+    height: 10px;
+    border-radius: 6px;
+    transition: transform 1s ease;
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.html{
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+
+.css{
+    background: lightgreen;
+    animation: css 1s linear forwards;
+}
+
+.javascript{
+    background: #00bcd4;
+    animation: javascript 1s linear forwards;
+}
+
+.cpp{
+    background: #ffeb3b;
+    animation: cpp 1s linear forwards;
+}
+
+.java{
+    background: #9c27b0;
+    animation: java 1s linear forwards;
+}
+
+.python{
+    background: darkorange;
+    animation: python 1s linear forwards;
+}
+
+.html span{
+    border: 3px solid #e91e63;
+}
+
+.css span{
+    border: 3px solid lightgreen;
+}
+
+.javascript span{
+    border: 3px solid #00bcd4;
+}
+
+.cpp span{
+    border: 3px solid #ffeb3b;
+}
+
+.java span{
+    border: 3px solid #9c27b0;
+}
+
+.python span{
+    border: 3px solid darkorange;
+}
+
+@keyframes html{
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    100%{
+        width: 86%;
+    }
+}
+
+@keyframes javascript{
+    100%{
+        width: 78%;
+    }
+}
+
+@keyframes cpp{
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes java{
+    100%{
+        width: 45%;
+    }
+}
+
+@keyframes python{
+    100%{
+        width: 54%;
+    }
+}
+
+/* ---------------Contact--------------- */
+
+#contact{
+    padding: 30px 100px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    margin-top: 20px;
+    flex-basis: 65%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.contact-left p img{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+    width: 8%;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons img{
+    margin-top: 15px;
+    width: 8%;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    font-family:"Sour Gummy";
+    width: 85%;
+    border: 0;
+    outline: none;
+    background: white;
+    padding: 15px;
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#msg{
+    color: #61b752;
+    display: block;
+}
+
+/* ---------------CSS for small screens--------------- */
+@media only screen and (max-width: 600px){
+
+    #header nav img{
+        width: 100px;
+        padding-top: 12px;
+    }
+
+    #header ul li a{
+        font-size: 30px;
+        margin: 10px -15px;
+    }
+
+    .header-text{
+        padding-top: 150px;
+    }
+
+    .about-col-1 img{
+        width: 350px;
+    }
+
+    .projects-list div img.among-us{
+        width: 275px;
+    }
+
+    .contact-left h1.sub-title{
+        font-size: 36px;
+    }
+
+    .contact-left img{
+        width: 45px;
+    }
+
+    .contact-left p img{
+        width: 45px;
+    }
+
+
+}

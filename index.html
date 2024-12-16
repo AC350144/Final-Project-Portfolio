@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Amanda Chen - Computer Science Student</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ---------------------------------------------Home--------------------------------------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/kuchipatchi.png" alt="kuchipatchi" width="150">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi there! My name is Amanda Chen.</h1>
+            <p>I'm a Computer Science major at California State University, Fullerton, with a knack for mixing technology and creativity.</p>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------------------About--------------------------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/avatar.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-text">Growing up, I was that kid who spent hours gaming and scrolling through the incredible artwork
+                    shared by social media creators. It didn't take long before I picked up a sketchpad (and 
+                    eventually a tablet) to start creating my own pieces. Those early experiments turned into 
+                    freelance gigs designing artwork for school clubs, which was super fun and gave me a taste
+                    of how art could make an impact. Fast forward to college, and I've started exploring how art
+                    and tech come together in UI/UX design. I think it's fascinating to see how creative design
+                    shapes how people experience technology. When I'm not coding or sketching, you can find me trying
+                    out new foods or sampling matcha drinks from different cafes — I love discovering new flavors! 
+                    I'm also a bit of a gamer, a casual tennis player, and a collector of all things cute and artsy. 
+                    If it's from Sanrio or Pop Mart, there's a good chance I already own it or want to! These days, I'm 
+                    diving into the world of UI/UX design, and I'm always excited to learn more about it. If there's 
+                    one thing I enjoy, it's taking on projects that let me think creatively, build something meaningful,
+                    and have a little fun along the way.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('resume')">Resume</p>
+                </div>
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>2024 - Present</span><br>Fast Food Cashier</li>
+                        <li><span>2021 - 2023</span><br>Boba Barista</li>
+                        <li><span>2019 - 2021</span><br>Balloon Vendor</li>
+                        <li><span>2016 - 2019</span><br>Freelance Artist</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Present</span><br>California State University, Fullerton</li>
+                        <li><span>2020 - 2023</span><br>Orange Coast College, CA</li>
+                        <li><span>2016 - 2020</span><br>Orange High School, CA</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="resume">
+                    <ul>
+                        <a href="documents/resume.pdf" download class="btn">Check out my resume!</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------------------Projects--------------------------------------------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <img src="images/cat_doodle_jump.gif" alt="cat_doodle_jump_gif">
+                <h2>Cat Doodle Jump Game</h2>
+                <p>My partner and I created a game similar to Doodle Jump with our own characters while using the Pygame library for Python.</p>
+                <a href="https://github.com/LouisOporto/DoodleJump-386-Project" class="btn">Learn more</a>
+            </div>
+            <div>
+                <img src="images/among_us.png" alt="among_us_art" class="among-us">
+                <h2>Drawing with code</h2>
+                <p>I learned how to code in Racket and used their drawing toolkit to draw Among Us.</p>
+            </div>
+            <div>
+                <img src="images/hiking_reservation.png" alt="hike_list_picture" class="hike">
+                <h2>Hiking Reservation Service</h2>
+                <p>Our team created a Hiking Reservation service that allows the user to log in, view, and reserve hikes while dynamically keeping
+                   any reservations made for the next user in C++.</p>
+                <a href="https://github.com/whataboutkris/CSA250-Hiking-Project" class="btn">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------------------Skills--------------------------------------------- -->
+<div id="skills">
+    <div class="container">
+        <div class="row">
+            <div class="skills-left">
+                <h1 class="sub-title">Skills</h1>
+                <h2>Technical</h2>
+                <h3>HTML</h3>
+                <div class="progress-bar">
+                    <div class="html"><span>90%</span></div>
+                </div>
+                <h3>CSS</h3>
+                <div class="progress-bar">
+                    <div class="css"><span>86%</span></div>
+                </div>
+                <h3>JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="javascript"><span>78%</span></div>
+                </div>
+                <h3>C++</h3>
+                <div class="progress-bar">
+                    <div class="cpp"><span>100%</span></div>
+                </div>
+                <h3>Java</h3>
+                <div class="progress-bar">
+                    <div class="java"><span>45%</span></div>
+                </div>
+                <h3>Python</h3>
+                <div class="progress-bar">
+                    <div class="python"><span>54%</span></div>
+                </div>
+            </div>
+            <div class="skills-right">
+                <h2>Non-technical</h2>
+                <ul>
+                    <li>Verbal and Written Communication<br>Confidently engaging with customers, teammates, and
+                        supervisors to ensure smooth and clear communication.</li>
+                    <li>Critical Thinking<br>Quick on my feet when solving unexpected challenges, whether it's
+                        a long line during rush hour or troubleshooting an order mix-up.</li>
+                    <li>Accuracy and Attention to Detail<br>Whether counting change, making boba drinks to
+                        perfection, or making sure the customer gets what they want, precision is key.</li>
+                    <li>Adaptability<br>Thriving in dynamic environments where no two shifts are the same and
+                        being ready to tackle new tasks head-on.</li>
+                    <li>Multitasking<br>Balancing multiple responsibilities, like managing orders, maintaining
+                        cleanliness, and interacting with customers—all without skipping a beat.</li>
+                    <li>Positive Attitude<br>Bringing energy and enthusiasm to every shift, even during busy or
+                        stressful times, and ensuring customers leave with a smile.</li>
+                    <li>Team Collaboration<br>Supported coworkers to create an efficient and friendly workplace,
+                        and staying behind to help with a heavy workload or sharing tips to make tasks easier.</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------------------------------Contact--------------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="images/email.png">AC350144@gmail.com</p>
+                <p><img src="images/phone.png">(714)200-8678</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bo.doro/"><img src="images/ig.png"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090246085495"><img src="images/fb.png"></a>
+                    <a href="https://github.com/AC350144"><img src="images/git.png"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h2>Leave me a message here!</h1>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+  
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-TN6VtpA3aBxHL7IdJst02yqKpDgEIT2dSgc1_eiFgv-0vbnSd4_0MXzoI7I3o1SO/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+          msg.innerHTML = "Message sent successfully!"
+          setTimeout(function(){
+              msg.innerHTML = ""
+          }, 1000)
+          form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
